@@ -1,0 +1,28 @@
+name: 'Openldap'
+description: 'Provides an Opendalp service'
+
+inputs:
+  adminPassword:
+    description: 'set the password for the admin user'
+    required: true
+    default: 'development'
+  
+  domain:
+    description: 'set domain name'
+    required: true
+  
+  prepopulate:
+    description: 'path where is the data to preload'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.adminPassword }}
+    - ${{ inputs.domain }}
+
+branding:
+  icon: box
+  color: black
