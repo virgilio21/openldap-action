@@ -22,6 +22,7 @@ runs:
   args:
     - ${{ inputs.adminPassword }}
     - ${{ inputs.domain }}
+    - ${{ inputs.prepopulate }}
 
 branding:
   icon: box
