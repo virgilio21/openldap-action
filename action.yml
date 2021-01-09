@@ -1,4 +1,4 @@
-name: 'Openldap'
+name: 'Setup openldap'
 description: 'Provides an Opendalp service'
 
 inputs:
